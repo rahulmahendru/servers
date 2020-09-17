@@ -8,3 +8,6 @@ This version of the server is created to handle a single thread at a time. The m
 ### Multi Threaded Server
 This version of the server is created to handle a multiple threads at a time. Apart from the operations od a single threaded server, this version of the server performs logging to record each request and data dump as hex. The server also supports a health check feature to request the working performance of the server.
 
+### Load Balancer
+The load balancer distributes connections over a set of servers after accepting connections from the clients. The selection of the servers is based on the perofrmance of the servers using the `healthcheck` functionality of the multi-threaded server. 
+

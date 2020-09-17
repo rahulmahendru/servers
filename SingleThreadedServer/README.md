@@ -8,5 +8,15 @@ In order to run the program, call the executable file **'httpserver'** followed 
 where 8080 is the port number. Multiple program arguments are not allowed. The server is then ready to respond to client requests.
 The server is single-threaded. What this means is that it can only work on one request at a time. After working on one request, it waits to recieve the next request from the client.
 
+### Error Handling
+
+**httpserver** is designed to handle the following errors: 
+* 200 - OK,
+* 201 - Created
+* 400 - Bad Request
+* 403 - Forbidden
+* 404 - Not Found
+* 500 - Internal Server Error
+
 ### Bugs
 The program does not encounter any bugs at the moment.

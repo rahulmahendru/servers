@@ -1,7 +1,8 @@
+# Makefile for the server
+
 CC = gcc
 CCFLAGS = -Wall -Wextra -Wpedantic -Wshadow -O2 -g
 COMPILECC = ${CC} ${CCFLAGS}
-
 MODULES = server
 MAIN = main
 CHEADER = ${MODULES:=.h}
